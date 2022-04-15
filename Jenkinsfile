@@ -7,7 +7,7 @@ pipeline {
            stage('Build') {
             steps {
                 echo 'Continuos Build'
-				sh 'mvn --version'
+				// sh 'mvn --version'
 				
             }
         }
