@@ -5,16 +5,17 @@ pipeline {
    }}
 
     stages {
-        stage('Download') {
-            steps {
-                echo 'Continuous download'
-            }
-        }
+        // stage('Download') {
+        //     steps {
+        //         echo 'Continuous download'
+        //     }
+        // }
         
          stage('Build') {
             steps {
                 echo 'Continuos Build'
 				sh 'mvn --version'
+				
             }
         }
            stage('Test') {
